@@ -19,7 +19,7 @@ const TenderDetails = () => {
         setTender(data.data);
       }
     } catch (error) {
-      console.error("Error fetching tender details:", error);
+      console.error("Error fetching tende:", error);
     }
     setLoading(false);
   };
