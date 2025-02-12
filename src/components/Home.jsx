@@ -14,7 +14,7 @@ const Home = () => {
   const fetchTenders = async (page) => {
     setLoading(true);
     try {
-      const response = await fetch(`https://tender-tau.vercel.app/api/tenders/page/${page}`);
+      const response = await fetch(`https://backend-gules-nu.vercel.app/api/tenders/page/${page}`);
       const data = await response.json();
       if (data.success) {
         setTenders(data.data);
