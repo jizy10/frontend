@@ -21,7 +21,7 @@ const Home = () => {
         setTotalPages(data.totalPages);
       }
     } catch (error) {
-      console.error("Error fetching tenders:", error);
+      console.error("Error fetching  tenders:", error);
     }
     setLoading(false);
   };
