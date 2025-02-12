@@ -13,7 +13,7 @@ const TenderDetails = () => {
   const fetchTenderDetails = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`https://tender-tau.vercel.app/api/tenders/${id}`);
+      const response = await fetch(`https://backend-gules-nu.vercel.app//api/tenders/${id}`);
       const data = await response.json();
       if (data.success) {
         setTender(data.data);
