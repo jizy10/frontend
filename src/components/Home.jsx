@@ -47,16 +47,9 @@ const Home = () => {
               {/* Tender Details */}
               <table className="w-full mt-4 border-collapse text-sm">
                 <tbody>
-                  <tr className="border-b">
-                    <td className="font-semibold text-gray-700 py-2">📅 Bid Closing:</td>
-                    <td>{tender["Bid closing date"]}</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="font-semibold text-gray-700 py-2">📂 Bid Opening:</td>
-                    <td>{tender["Bid opening date"]}</td>
-                  </tr>
+                  
                   <tr>
-                    <td className="font-semibold text-gray-700 py-2">📄 Published on:</td>
+                    <td className="font-semibold text-gray-700 py-2">Published on:</td>
                     <td>{tender["Published on"]}</td>
                   </tr>
                 </tbody>
