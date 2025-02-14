@@ -93,19 +93,13 @@ const TenderDetails = () => {
                     {key.replace(/_/g, " ")}:
                   </td>
                   <td className="text-gray-800 py-2">
-                    {key === "Region" && tender["Region URL"] ? (
-                      <a 
-                        href={tender["Region URL"]} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline"
-                      >
-                        {value}
-                      </a>
-                    ) : (
-                      value
-                    )}
-                  </td>
+  {key === "Region" ? (
+    value  // Display as plain text, without embedding a link
+  ) : (
+    value
+  )}
+</td>
+
                 </tr>
               );
             }
