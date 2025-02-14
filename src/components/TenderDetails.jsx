@@ -32,14 +32,9 @@ const TenderDetails = () => {
           <li key={category.id} className="my-1">
             <div style={{ marginLeft: `${level * 20}px` }} className="flex items-center">
               {level > 0 && <span className="text-gray-400">└─ </span>}
-              <a
-                href={category.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
+             
                 {category.name}
-              </a>
+            
             </div>
 
             {/* Recursively render subcategories if they exist */}
